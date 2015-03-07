@@ -171,7 +171,7 @@ public class ToyLangUtil {
         if(s.sym == 0 || s.sym == 1) {
             return sym.terminalNames[s.sym];
         } else if (s.sym > 1 && s.sym < sym.terminalNames.length) {
-            return sym.terminalNames[s.sym].substring(2, sym.terminalNames[s.sym].length() - 2);
+            return sym.terminalNames[s.sym].substring(1, sym.terminalNames[s.sym].length());
         } else {
             return "NOT_A_TOKEN";
         }
