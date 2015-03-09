@@ -1,1 +1,7 @@
-void f() {}
+void f() {} 
+int x; 
+double [][][] HI;
+string func(int a, boolean b, Vector[] v) {
+	int localInt;
+	;;;;;;;
+}
