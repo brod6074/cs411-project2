@@ -10,7 +10,7 @@ public class Project2 {
         //Parse the first file
         System.out.println("FIRST FILE PARSING OUTPUT");
         try {
-        	parser p = new parser(new ToyScanner("ToyTestFile.toy"));
+        	Parser p = new Parser(new ToyScanner("SimpleToy1.toy"));
             p.parse();
         } catch (FileNotFoundException e) {
             System.out.println("Unable to find file.");

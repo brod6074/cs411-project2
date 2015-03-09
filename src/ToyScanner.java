@@ -36,10 +36,12 @@ public class ToyScanner implements java_cup.runtime.Scanner{
             scanLine(tempLine);
         }
         Stack<Symbol> temp = new Stack<Symbol>();
+        temp.push(new Symbol(sym.EOF));
         while(!out.empty()) {
             temp.push(out.pop());
         }
         out = temp;
+        
     }
 
     //The method that scans each line into words for the trie
